@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LInks e ancoras</title>
+</head>
+<body>
+    <h1>Exercicio de links</h1>
+
+    <p>Links são declarados no html com a tag &lt;a src="link.com"&gt;aqui teriamos o link&lt;a&gt;</p>
+    <br>
+    <p>Links são declarados com o "a" de ancor. Possibilitando você anexar links internos e externos, links para downloads, em parte do seu texto, e até mesmo botões clicaveis.</p>
+    <br>
+    <hr>
+
+    <h2>Links externos</h2>
+    <p>Links externos, são os links que levam para fora de seu site. É sempre importante usar dois parametroa para estes casos.</p>
+    <p>Parametros "taget= "_blank"" e "rel="external"" </p>
+    <br>
+    <p>O parametro _blank faz com que seu site continue aberto para estes casos,emquanto abre uma nova guia para o site externo que esta clicando.</p>
+    <p>Ja o parametro external, ajuda com que sites de busca tenham informações de estar se tratando de um link externo para seu site</p>
+    <br>
+    <h3>Veja um exemplo de link externo</h3>
+    <br>
+    <p>Este é um link externo do <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">canal do youtube do curso em</a></p>
+    <br>
+    <hr>
+
+    <h2>Links internos</h2>
+    <p>Links internos dentro do proprio arquivo, são mais simples de tratar, você deve direcionar a pagina com um link basico que indica onde no sistema, esta o arquivo.</p>
+    <p>O parametro "rel" ainda é mantido, para indicar que se trata de uma pagina "next", enquanto os links que forem te direcionar de volta para sua pagina index, terão o rel "prev"</p>
+    <br>
+    <h3>Veja um exemplo de link interno</h3>
+    <br>
+    <p>Este é um link interno da <a href="pag002.html" rel="next" target="_self">pagina 02 do meu site.</a></p>
+    <br>
+    <p>Este é um link interno da <a href="archives/pag003.html" rel="next" target="_self"> pagina 003 do meu site.</a></p>
+    <hr>
+
+    <h2>No follow</h2>
+    <p>No follow é um parametro, muitas vezes você poder não vincular seu site a marcas ou sites externos para o dispositivo de busca.</p>
+    <p>Ele deve ser declarado dentro da tag "a" desta forma:rel="nofollow"</p>
+    <p>Isso protege que seu site seja vinculado muitas vezes a uma marca que você não sabe a vericidade, ou até mesmo a propagandas que pagaram por um patrocinio por exemplo.</p>
+    <br>
+    <hr>
+
+
+
+
+</body>
+</html>

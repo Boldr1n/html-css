@@ -1,0 +1,41 @@
+@charset "UFT-8";
+
+/*
+Para declarações.
+
+HTML usado em id - CSS é usado "#" para linkar (pode apenas um elemento);
+HTML usado em class - CSS é isado "." para linkar (pode vários elemntos);
+
+*/
+
+body{
+    background-color:#8AA6A3;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.titulo{
+    color: #127369; 
+}
+
+.basico{
+    color: #4f802f; 
+}
+
+.intermediario{
+    color: #7b802f; 
+}
+
+.avancado{
+    color: #802f2f;
+}
+
+
+#principal {
+    font-weight: bolder;
+    text-align: center;
+    background-color: #10403B;
+    color: white;
+}
+
+

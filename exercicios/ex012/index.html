@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Imagens dinamicas são imagens que devem se adaptar a tela de seus usuarios dependendo do tamnho delas.
+        Ao contrario da TAG &lt;img&gt; usaremos a seguinte tag:
+    </p>
+<br>
+<pre>
+    <code>
+        &lt;picture&gt;
+            &lt;source midia="(max-width: 1050px)" srcset="imgpath.img" type="image/png"&gt;
+            &lt;img source="imgpath2.img" alt="imgdescription"&gt;
+        &lt;/picture&gt;
+    </code>
+</pre>
+
+<p>Dessa forma, o código fara uma checagem em relação ao tamanho da tela do usuario para carregar uma imagem que faça sentido,
+    e assim evitar de que um smartphone carregue uma imagem muito maior sem necessidade por exemplo.
+</p>
+<br>
+<h2>Imagem dinamica na pratica.</h2>
+<p>Veja aqui um exemplo de imagem dinamica:</p>
+<hr>
+<picture>
+    <source media="(max-width:750px)" srcset="source/pictsmall.png" type="image/png">
+    <source media="(max-width:1050px)" srcset="source/pictmed.png" type="image/png">
+    <img src="source/pictgde.png" alt="Imagem dinamica">
+</picture>
+<br>
+<hr>
+
+<h1>Audios</h1>
+<p>Podcasts são formas de midia cunsumidas de maneira cada vez maior no mundo. Para colocar audios em seu site é simples mas você deve ficar atento.
+    É bom sempre ter mais de um formato de arquivo, alem do MP3. Para garantir que seu usuario consiga consumir seu conteudo, mesmo que esteja em um navegador que não tenha suporte a um arquivo tipo MP3
+</p>
+<br>
+<p>Você pode declarar um arquivo de audio usando a seguinte tag:
+<br>
+<pre><code>&lt;audio src="caminhoarquivoaudio.mp3" controls&gt;</code></pre>
+<br>
+ou desta forma:
+<br>
+<pre><code>&lt;audio preload="metadata" controls&gt;
+    &lt;source src="caminhoarquivoaudio.mp3" type="audio/mpeg"&gt;
+    &lt;source src="caminhoarquivoaudio.ogg" type="audio/ogg"&gt;
+    &lt;source src="caminhoarquivoaudio.wav" type="audio/wav"&gt;
+    &lt;/audio&gt;
+</code></pre>
+<source>
+</p>
+
+<br>
+<p>Fique sempre atento, arquivos WAV devem ser evitados nesta tag, por conta de seus tamanhos, se for querer colocalos, tente mantelo sempre na tag para download, e assim não prejudicar a navegação do seu site com arquivos muito pesados.</p>
+<br>
+
+
+<h2>Vamos ver na pratica</h2>
+<p>Aqui temos um arquivo de audio funcionando na pratica:</p>
+
+
+<audio preload="metadata" controls>
+    <source src="midia/Nerdcast_211_profissao_programador.mp3" type="audio/mpeg">
+    <source src="midia/Nerdcast_211_profissao_programador.ogg" type="audio/ogg">
+    <p>Infelizmente seu navegador não é compatival com nossos arquivos disponiveis. Baixe um navegador compativel <a href="https://www.google.com/intl/pt-BR/chrome/next-steps.html?statcb=1&installdataindex=empty&defaultbrowser=0">clicando aqui.</a></p>
+</audio>
+
+<br>
+<hr>
+
+<h1>Videos</h1>
+<p>Provavlmente a midia mais consumida atualmente depois das imagens, os videos também precisam de tratamento ideal para seus sites não ficarem custosos para hospedagem, ou para a banda larga e trafego de dados de seu cliente.</p>
+<p>Para poder aplicar o código, funciona de forma parecida com os outros formatos de midia que utilizamos. Lembrando de sempre obedecer a hierarquia da ordem ao declarar, dê sempre prioridade aos arquivos mais leves para os maiores.</p>
+<br>
+<pre><code>&lt;video src="caminhoarquivovideo.mp4" type="video/mp4" controls poster="caminhocapadovideo.jpg"&gt; &lt;/video&gt;</code></pre>
+<br>
+<p>Em caso de varios formatos, você deve formatar desta forma:</p>
+<br>
+<pre><code>
+    &lt;video controls poster=caminhocapadovideo.jpg&gt;
+    &lt;source src=caminhoarquivovideo.mp4 type="video/mp4"&gt;
+    &gt;/video&lt;
+</code></pre>
+
+
+<br>
+<h2>Aplicando na pratica</h2>
+<p>Aqui temos um video hospedado localmente no site.</p>
+<br>
+<video controls poster="midia/windows_xp_custom_wallpaper_by_deviantarttlereal_detfc2f-fullview.jpg" width="560" height="315">
+    <source src="video/x2mate.com-Windows XP Bootscreen.mp4" type="video/mp4">
+    <source src="video/X2mate.Com-Windows Xp Bootscreen.mkv" type="video/mp4">
+    <source src="video/X2mate.Com-Windows Xp Bootscreen.webm" type="video/webm">
+    <source src="video/x2mate.com-Windows-XP-Bootscreen.ogv" type="video/ogv">
+    <p>Infelizmente seu navegador não suporta reproduções de video. Baixe um navegador compativel <a href="https://www.google.com/intl/pt-BR/chrome/next-steps.html?statcb=1&installdataindex=empty&defaultbrowser=0">clicando aqui.</a></p>
+</video>
+<br>
+<hr>
+
+<h2>Videos externos</h2>
+<p>Você também tem a opção de incorporar videos externos de outras plataformas em seu site. Basta usar o botão "incorporar" em plataformas como o yougute. Veja:</p>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=Skhtb6XyIUExWs9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+</body>
+</html>
