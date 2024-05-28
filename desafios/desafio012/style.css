@@ -14,15 +14,39 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    font-variant: small-caps;
 }
 
 header>h1{
     padding-top: 50px;
+    font-size: 10em;
+}
+header>p{
+    padding-bottom: 50px;
 }
 
+header a, footer a{
+    text-decoration: none;
+    color: white;
+}
 
+header a:hover, footer a:hover{
+    text-decoration:underline;
+    color: blue;
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
 
 footer{
     background-color: black ;
     color: white;
+    font-size: 0.75em;
 }
