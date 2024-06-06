@@ -1,0 +1,22 @@
+@chartset "UTF-8";
+
+body{
+    background-color: azure;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: antiquewhite;
+    width: 150px;
+}
+
+td{
+    border:1px solid black;
+    padding: 5px;
+    text-align: center;
+}
