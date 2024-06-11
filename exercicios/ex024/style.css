@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+abbr{
+    text-decoration: none;
+}
+
+header{
+    background-color: aquamarine;
+    background-image: url(imgs/tabelas.jpg);
+    background-size: cover;
+    padding: 30px;
+    
+}
+
+h1{
+    background-color: rgba(56, 55, 55, 0.87);
+    color: rgba(243, 19, 11, 0.993);
+    text-align: center;
+    font-size: xx-large;
+    padding: 20px;
+}
+
+table.exemplo{
+    width: 400px;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: rgba(15, 173, 121, 0.726);
+}
+
+
+td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
